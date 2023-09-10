@@ -1,0 +1,5 @@
+SELECT SUM(order_value) AS total_order_value
+FROM orders
+WHERE id = :specific_customer_id
+AND order_date BETWEEN :start_date AND :end_date;
+
